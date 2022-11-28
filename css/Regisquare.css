@@ -1,9 +1,39 @@
 body {
-    background-color: #8fc4b7;
+    background-color: white;
 }
 
 @media (min-width: 1025px) {
     .h-custom {
         height: 100vh !important;
     }
+}
+
+.pass_show{position: relative} 
+
+.pass_show .ptxt { 
+
+position: absolute; 
+
+top: 50%; 
+
+right: 10px; 
+
+z-index: 1; 
+
+color: #f36c01; 
+
+margin-top: -10px; 
+
+cursor: pointer; 
+
+transition: .3s ease all; 
+
+} 
+
+.pass_show .ptxt:hover{color: #333333;} 
+
+.touch:focus{
+    outline : red;
+    border : red;
+    box-shadow : 10px red;
 }

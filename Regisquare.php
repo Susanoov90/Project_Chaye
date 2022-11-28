@@ -110,7 +110,7 @@
 </head>
 <body>
     
-<section class="h-100 h-custom" style="background-color: #8fc4b7;">
+<section class="h-100 h-custom">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-lg-8 col-xl-6">
@@ -189,16 +189,15 @@
                 <input type="text"  placeholder="Email" class="form-control" name="mail"/>
               </div>
 
-              <div class="input-group mb-3">
-                <input type="password" id="form3Example1q" placeholder="Mot de passe" class="form-control" name="mdp"/>
-                
-                
+              <div class="form pass_show mb-3">
+                <input type="password" id="form3Example1q" placeholder="Mot de passe" class="touch form-control" name="mdp"/>
                   <!--<span class="input-group-text" id="togglePassword">   👁   </span>      -->        
-                             
+                <span class="ptxt">Show</span>
               </div>
 
-              <div class="form-outline mb-4">
+              <div class="form-outline pass_show mb-4">
                 <input type="password" id="form3Example1q" placeholder="Confirmer le mot de passe" class="form-control" name="next_mdp"/>
+                <span class="ptxt">Show</span>
               </div>
 
               <input type="submit" class="btn btn-success btn-lg mb-1" name="Valider"></input>
@@ -212,31 +211,25 @@
   </div>
 </section>
 
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script>
+        
+      $(document).ready(function(){
+      
+        
 
-  <!--script pour afficher le mot de passe ou masquer. Il faut juste trouver 2 icones. L'oeil ouvert symbolisant le mot de passe affiché et l'oeil barré symbolisant le mot de passe masqué -->
-  <!-- <script>
-        const togglePassword = document
-            .querySelector('#togglePassword');
-  
-        const password = document.querySelector('#password');
-  
-        togglePassword.addEventListener('click', () => {
-  
-            // Toggle the type attribute using
-            // getAttribure() method
-            const type = password
-                .getAttribute('type') === 'password' ?
-                'text' : 'password';
-                  
-            password.setAttribute('type', type);
-  
-            // Toggle the eye and bi-eye icon
-            this.classList.toggle('✖');
-        });
-    </script> -->
+      $(document).on('click','.pass_show .ptxt', function(){ 
+
+      $(this).text($(this).text() == "Show" ? "Hide" : "Show"); 
+
+      $(this).prev().attr('type', function(index, attr){return attr == 'password' ? 'text' : 'password'; }); 
+
+      });  
+    });
+    </script>
+
 
 </body>
 </html>

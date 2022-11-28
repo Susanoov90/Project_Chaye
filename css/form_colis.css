@@ -1,0 +1,46 @@
+.arrive{
+    margin-left:250px;
+}
+
+.link_style{
+    text-align: center;
+}
+
+.long{
+    width: 100%;
+    background-color: #3b5998;
+    color: white;
+}
+
+.long:hover{
+    background-color: white;
+    color: #3b5998;
+}
+
+.long:hover{
+    background-color: white;
+    color: #3b5998;
+}
+
+.long:active{
+    background-color: gray;
+    color: #3b5998;
+}
+
+.forspace{
+    padding-top: 50px;
+
+}
+
+.rounded{
+    background-color: coral;
+}
+.rounded:hover{
+    background-color: white;
+    color: coral;
+}
+
+.submit{
+    background-color: coral;
+    color: white;
+}
