@@ -1,2 +1,2 @@
 # Project_Chaye
-Project Code of Chaye devlopment
+Project Code of Chaye development
