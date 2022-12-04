@@ -53,7 +53,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="css/loginsquare.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body style="background-color: #8fc4b7;">
@@ -67,13 +67,14 @@
 
       <div class="col-lg-8 col-xl-6">
 
-        <div class="card rounded-3">
+        <div class="card rounded-3 bg-orange">
 
-          <img src="images/chayeloglog.png"
-            class="w-70" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
-            alt="Sample photo">
+         <div class="padding-top-30 padding-bottom-30"> 
+             <img class="w30"src="images/logo-chaye.svg"class="w-70" style=" display: block; margin: 0 auto;" alt="logo Chaye">
+           
+            </div>
 
-            <div class="card-rounded card-body p-4 p-md-5">
+            <div class="card-rounded card-body p-4 p-md-5 bg-white-app border-top-left-radius-20 border-top-right-radius-20">
 
             
               <form action="" class="px-md-2" method="post">
@@ -107,7 +108,7 @@
                   <div class="col">
                   </div>
                   
-                  <div class="col-md-6 mb-4">
+                  <div class="col-md-12 mb-4">
 
                     <div class="input-group mb-3">
                         <div class="form-floating">
@@ -123,28 +124,28 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div class="margin-top-10">
                         <a href="">Mot de passe oublié</a>
                     </div>
 
-                    <div class="checkbox">
+                  <div class="txt-center">
                           <input id="checkboxSignup" type="checkbox">
                             <label for="checkboxSignup">
                             Se souvenir de moi
                             </label>
                     </div>
 
-                    <button type="submit" class="btn btn-success btn-lg mb-1">Valider</button>
+                    <button type="submit" class="btn-chaye btn-lg mb-1">Valider</button>
 
-                    <div class="ligne_horizontal">
+                    <div class="mx-auto margin-top-20 margin-bottom-20">
                         
-                        ou
+                      <h4 class="background"><span>ou</span></h4>
                         
                     </div>
 
                 
 
-                    <div>
+                    <div class="flex-box-justify">
 
                         <a class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button">
                             <i class="fab fa-facebook me-2"></i>Facebook
@@ -156,9 +157,9 @@
 
                     </div>
 
-                    <div>
+                     <div class="txt-center">
                       <p>
-                          Jai deja un compte ?<a href="">Se connecter</a>
+                          Jai deja un compte ? <a href="">Se connecter</a>
                       </p>
                     </div>
 

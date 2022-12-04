@@ -1,4 +1,4 @@
-<?php 
+<?php
 
     $host="localhost";
     $user="root";
@@ -102,8 +102,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="css/Regisquare.css">
+   
     <title>Document</title>
+     <link rel="stylesheet" href="css/Regisquare.css">
+     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/5c7c3a440b.js" crossorigin="anonymous"></script>
 
 
@@ -114,14 +116,17 @@
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-lg-8 col-xl-6">
-        <div class="card rounded-3">
+        <div class="card rounded-3 bg-orange">
           
-        <img src="images/longchaye.png"
-            class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
-            alt="Sample photo">
+       <div class="padding-top-30 padding-bottom-30"> 
+             <img class="w30"src="images/logo-chaye.svg"class="w-70" style=" display: block; margin: 0 auto;" alt="logo Chaye">
+           
+            </div>
 
-          <div class="card-body p-4 p-md-5">
-            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Creer un compte</h3>
+
+          <div class="card-rounded card-body p-4 p-md-5 bg-white-app border-top-left-radius-20 border-top-right-radius-20" style="position:relative;">
+             <button type="button" class="btn-close close-x" aria-label="Close"></button>
+            <h2 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Creer un compte</h2>
 
             <form method="post" class="px-md-2">
 
@@ -200,7 +205,7 @@
                 <span class="ptxt">Show</span>
               </div>
 
-              <input type="submit" class="btn btn-success btn-lg mb-1" name="Valider"></input>
+              <input type="submit" class="btn-chaye btn-lg mb-1 bg-purple" name="Valider">
 
             </form>
 

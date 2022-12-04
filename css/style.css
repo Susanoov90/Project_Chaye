@@ -9,7 +9,114 @@ body {
     background-color: #ffffff;
     overflow-x: hidden;
 }
+/******texte******/
+h2{
+ font-size: 40px!important;
+    color: #4F4294;
+    text-align: center;
+}
+h4 {
+   font-family: "Poppins", sans-serif;
+    font-size: 20px;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+    padding: 20PX;
+}
+h4.background:before {
+    border-top: 2px solid #dfdfdf;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+h4.background {
+    position: relative;
+    z-index: 1;
+}
+h4.background span {
+    background: #fff;
+    padding: 0 15px;
+}
+/******fin texte******/
+/******color******/
+.bg-orange{background:#EC634E;}
+.bg-purple{background:#4F4294!important;}
+.bg-white-app{background:#ffffff;}
+.form-control:focus{border-color: #EC634E;box-shadow:0 0 0 0.25rem rgb(236 99 78 / 25%)}
 
+/******fin color****/
+/****MARGIN-PADDING-WIDHT*****/
+.w30{width: 30%;}
+.margin-top-10{margin-top: 10px!important;} 
+.margin-top-20{margin-top: 20px!important;}  
+.margin-bottom-20{margin-bottom: 20px!important;} 
+.padding-top-30{padding-top:30px;}
+.padding-bottom-30{padding-bottom:30px;}
+/****FIN MARGIN-PADDING-WIDHT*****/
+/*****border-radius*****/
+.border-top-left-radius-20{border-top-left-radius: 20px!important;}
+.border-top-right-radius-20{border-top-right-radius:20px!important;} 
+/****fin border-radius***/
+/*******divers*******/
+.txt-center{text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;}
+.btn-chaye{
+   background: #EC634E;
+    color: #ffffff;
+    font-size: 22px;
+    width: 100%;
+    PADDING: 18px;
+    border-radius: 20px;
+    border: none;
+    margin: 0 auto;
+    display: block;
+}
+.mx-auto{
+    display: block;
+    margin: 0 auto;
+}
+.flex-box-justify{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-content: space-between;
+    gap: 31px;
+}
+.close-x{float: right;
+    position: absolute;
+    top: 15px;
+      display: block;
+   
+    right: 0px;
+    margin-right: 45px;
+}
+/*******fin divers*****/
+
+/******loginsquare*****/
+@media (min-width: 1025px) {
+    .h-custom {
+        height: 100vh !important;
+    }
+}
+
+/********regissquare****/
+@media (min-width: 1025px) {
+    .h-custom {
+        height: 100vh !important;
+    }
+}
+
+
+/*******fin regissquare***/
+/******fin loginsquare****/
 .layout_padding {
     padding: 90px 0;
 }
@@ -72,6 +179,7 @@ body {
 h1,
 h2 {
     font-family: 'Playfair Display', serif;
+    
 }
 
 
@@ -978,6 +1086,55 @@ a:focus {
 }
 
 
+/*****reset application*****/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/***** fin reset application***/
 
 /*# sourceMappingURL=style.css.map */
