@@ -139,7 +139,7 @@
 
 
                                 <div class="link_style">
-                                    <a href="confirm_colis.php*">
+                                    <a href="confirm_colis.php">
                                         <input type="submit" class="btn submit btn-lg mb-1" name="publish" value="Publier" />
                                     </a>
                                 </div>
