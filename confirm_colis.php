@@ -101,48 +101,50 @@
                                         </div>
                                     </div>
 
+                                    <div class="p-4 p-md-5">
+                                        <div style="background-color :rgb(176, 168, 168);" class=" p-1 input-group mb-3">
+                                            Type de colis pris en charge :
 
-                                <div style="background-color :rgb(176, 168, 168);" class="input-group mb-3">
-                                Type de colis pris en charge : 
+                                        </div>
 
-                                </div>
+                                        <div style="background-color :rgb(176, 168, 168);" class=" p-1 input-group mb-4">
+                                            Nombre de kilos disponibles (kg) :
 
-                                <div style="background-color :rgb(176, 168, 168);" class="input-group mb-4">
-                                Nombre de kilos disponibles (kg) :
-                                    
-                                </div>
+                                        </div>
 
-                                <div style="background-color :rgb(176, 168, 168);" class="input-group mb-4">
-                                Prix au kilo (en euro) :
-                                    
-                                </div>
+                                        <div style="background-color :rgb(176, 168, 168);" class="p-1 input-group mb-4">
+                                            Prix au kilo (en euro) :
 
-                                <div style="background-color :rgb(176, 168, 168);" class="input-group mb-4">
-                                Longueur du colis (en cm) :
-                                    
-                                </div>
+                                        </div>
 
-                                <div style="background-color :rgb(176, 168, 168);" class="input-group mb-4">
-                                Largeur du colis (en cm) :
-                                    
-                                </div>
+                                        <div style="background-color :rgb(176, 168, 168);" class="p-1 input-group mb-4">
+                                            Longueur du colis (en cm) :
 
-                                <div style="background-color :rgb(176, 168, 168);" class="input-group mb-4">
-                                Profondeur du colis (en cm) :
-                                    
-                                </div>
+                                        </div>
 
-                                <div style="background-color :rgb(176, 168, 168);" class="input-group mb-4">
-                                    Image choisie : 
-                                </div>
+                                        <div style="background-color :rgb(176, 168, 168);" class="p-1 input-group mb-4">
+                                            Largeur du colis (en cm) :
 
+                                        </div>
+
+                                        <div style="background-color :rgb(176, 168, 168);" class="p-1 input-group mb-4">
+                                            Profondeur du colis (en cm) :
+
+                                        </div>
+
+                                        <div style="background-color :rgb(176, 168, 168);" class="p-1 input-group mb-4">
+                                            Image choisie :
+                                        </div>
+
+                                    </div>
 
 
-                                <div class="link_style">
-                                    <a href="confirm_colis.php">
-                                        <input type="submit" class="btn submit btn-lg mb-1" name="publish" value="Publier" />
-                                    </a>
-                                </div>
+
+                                    <div class="link_style">
+                                        <a href="confirm_colis.php">
+                                            <input type="submit" class="btn submit btn-lg mb-1" name="publish" value="Publier" />
+                                        </a>
+                                    </div>
 
                             </form>
 
