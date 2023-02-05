@@ -1135,6 +1135,50 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.background_search{
+    background-image: url("images/test_background.png");
+}
+
+.style_img{
+    background-color: coral;
+    display: flex;
+    justify-content:space-between;
+}
+
+.style_direct_img{
+    height: 40px;
+}
+
+.space_begin{
+    margin-left: 15px;
+}
+
+.space_end{
+    margin-right: 15px;
+}
+
+.style_button{
+    text-align: center;
+}
+
+.style_flexin_first{
+    text-align: end;
+}
+
+.style_flexin_second{
+    text-align: start;
+}
+
+.style_font{
+    font-size: 25px;
+    border-radius: 4%;
+    width: 200px;
+    background-color: coral;
+    border: coral;
+}
+
+
 /***** fin reset application***/
 
 /*# sourceMappingURL=style.css.map */

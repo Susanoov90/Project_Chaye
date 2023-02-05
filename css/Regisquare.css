@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-image: url('images/test_background.png');
 }
 
 @media (min-width: 1025px) {

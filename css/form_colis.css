@@ -29,6 +29,7 @@
 
 .forspace{
     padding-top: 50px;
+    text-align: center;
 
 }
 
@@ -43,4 +44,9 @@
 .submit{
     background-color: coral;
     color: white;
+}
+
+.destination{
+    height: 150px;
+    background-color: azure;
 }

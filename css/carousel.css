@@ -1,49 +1,46 @@
-.spaceup {
-    top: 100%;
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
 }
 
-.MultiCarousel {
-    float: left;
-    overflow: hidden;
-    padding: 15px;
-    width: 100%;
-    position: relative;
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
 }
 
-.MultiCarousel .MultiCarousel-inner {
-    transition: 1s ease all;
-    float: left;
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
 }
 
-.MultiCarousel .MultiCarousel-inner .item {
-    float: left;
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
 }
 
-.MultiCarousel .MultiCarousel-inner .item>div {
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    background: #f1f1f1;
-    color: #666;
+.carousel-inner .carousel-item.active,
+.carousel-item{
+    height: 300px;
 }
 
-.MultiCarousel .leftLst,
-.MultiCarousel .rightLst {
-    position: absolute;
-    border-radius: 50%;
-    top: calc(50% - 20px);
+.carousel_card{
+    background-color: coral;
 }
 
-.MultiCarousel .leftLst {
-    left: 0;
-}
-
-.MultiCarousel .rightLst {
-    right: 0;
-}
-
-.MultiCarousel .leftLst.over,
-.MultiCarousel .rightLst.over {
-    pointer-events: none;
-    background: #ccc;
+.carousel_font_card{
+    text-align: start
 }
