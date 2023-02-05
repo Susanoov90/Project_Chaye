@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,19 +15,45 @@
 
 <body>
 
+    <!--debut header section-->
     <header style="background-color : coral;">
         <div style="text-align : center;">
             <img src="images/chayelogo-removebg-preview.png" alt="" srcset="">
         </div>
     </header>
+    <!-- end header section -->
 
-    <section>
+    <section class="h-100 h-custom">
+
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-lg-8 col-xl-6">
                     <div class="card rounded-3">
-                        <div class="card-body p-4 p-md-5">
 
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Aide !
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Aide</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Cette page est une page de confirmation des colis inscrits précédemment
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
 
                             <div class="container" style="display : flex; justify-content : space-between">
 
@@ -48,78 +70,96 @@
 
                             </div>
 
-                            <div class="link_style">
-                                <a href="#" class="btn btn-primary rounded" role="button" data-bs-toggle="button">
-                                    Je transporte
-                                </a>
+                            <div style="background-color : rgb(202, 197, 197);" class="link_style">
+                                <span style="font-size : 40px; color : rgb(16, 94, 188);font-weight:bold">J'expédie /</span>
+                                <span style="font-size : 40px;color : rgb(88, 88, 88);font-weight:bold">Je transporte</span>
                             </div>
 
-
-
-
-                            <form action="">
+                            <form class="" action="confirm_colis.php" method="POST" enctype="multipart/form-data">
 
                                 <div class="forspace">
-                                    <div>
-                                        de <input type="text"> vers <input type="text">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div style="text-align : end">
+                                                De <select name="" id="">
+                                                    <option value="Choose_Depart">Chosir le pays et ville</option>
+                                                </select>
+                                                <div style="text-align : center">
+                                                    Depart le :
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div style="text-align : start">
+                                                Vers <select name="" id="">
+                                                    <option value="Choose_Depart">Chosir le pays et ville</option>
+                                                </select>
+                                                <div>
+                                                    Arrive le :
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <div style="display: flex">
-                                        <div>depart le :</div>
-                                        <div class="arrive">Arrive le :</div>
-                                    </div>
+
+                                <div style="background-color :rgb(176, 168, 168);" class="input-group mb-3">
+                                Type de colis pris en charge : 
+
                                 </div>
 
-                                <div class="form-outline mb-4">
-                                    <button class="long">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                        </svg>
-                                        Publier sur Facebook
-                                    </button>
+                                <div style="background-color :rgb(176, 168, 168);" class="input-group mb-4">
+                                Nombre de kilos disponibles (kg) :
+                                    
                                 </div>
 
-                                <div class="form-outline mb-4">
-                                    Type de colis pris en charge : <b> </b>
+                                <div style="background-color :rgb(176, 168, 168);" class="input-group mb-4">
+                                Prix au kilo (en euro) :
+                                    
                                 </div>
 
-                                <div class="form-outline mb-4">
-                                    Nombre de kilos disponible (en kg) : <b> </b>
+                                <div style="background-color :rgb(176, 168, 168);" class="input-group mb-4">
+                                Longueur du colis (en cm) :
+                                    
                                 </div>
 
-                                <div class="form-outline mb-4">
-                                    Prix au kilo (en euro) : <b> </b>
+                                <div style="background-color :rgb(176, 168, 168);" class="input-group mb-4">
+                                Largeur du colis (en cm) :
+                                    
                                 </div>
 
-                                <div class="form-outline mb-4">
-                                    Longueur du colis (en cm) : <b> </b>
+                                <div style="background-color :rgb(176, 168, 168);" class="input-group mb-4">
+                                Profondeur du colis (en cm) :
+                                    
                                 </div>
 
-                                <div class="form-outline mb-4">
-                                    Largeur du colis (en cm) : <b> </b>
+                                <div style="background-color :rgb(176, 168, 168);" class="input-group mb-4">
+                                    Image choisie : 
                                 </div>
 
-                                <div class="form-outline mb-4">
-                                    Profondeur du colis : <b> </b>
-                                </div>
 
 
                                 <div class="link_style">
-                                    <input type="submit" class="btn submit btn-lg mb-1" value="Valider commandes" />
+                                    <a href="confirm_colis.php*">
+                                        <input type="submit" class="btn submit btn-lg mb-1" name="publish" value="Publier" />
+                                    </a>
                                 </div>
 
                             </form>
 
-
-
                         </div>
+
+
+
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

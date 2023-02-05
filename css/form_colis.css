@@ -3,7 +3,9 @@
 }
 
 .link_style{
-    text-align: center;
+    background-color: rgb(176, 168, 168);
+    border: 1px;
+    font-weight:bold
 }
 
 .long{
