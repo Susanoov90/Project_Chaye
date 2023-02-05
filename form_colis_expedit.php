@@ -41,8 +41,7 @@ if (isset($_POST["publish"])) {
         $execute_1 = $prepare_1->execute($tab_1);
 
         if ($execute_1 == true) {
-            $success_msg = "Produit ajouté avec succès. Nous vous notifierions en cas d'expedition";
-            header("Location : mainsquare?addsucess=$success_msg");
+            header("Location : confirm_colis?addconfirmation");
         } else {
             $error_msg = "Il se peut que vous ayiez mal entré les informations";
         }
@@ -127,7 +126,7 @@ if (isset($_POST["publish"])) {
                             </div>
                         </div>
 
-                        <div class="card-body p-4 p-md-5">
+                        <div class="card">
 
                             <div class="container" style="display : flex; justify-content : space-between">
 
@@ -144,41 +143,38 @@ if (isset($_POST["publish"])) {
 
                             </div>
 
-                            <div class="link_style">
-                                <a href="#" class="btn btn-primary rounded" role="button" data-bs-toggle="button">
-                                    Je transporte
-                                </a>
+                            <div style="background-color : rgb(202, 197, 197);" class="link_style">
+                                <span style="font-size : 40px; color : rgb(16, 94, 188);font-weight:bold" >J'expédie /</span>
+                                <span style="font-size : 40px;color : rgb(88, 88, 88);font-weight:bold">Je transporte</span>
                             </div>
 
-                            <form action="" method="POST" enctype="multipart/form-data">
+                            <form class="" action="confirm_colis.php" method="POST" enctype="multipart/form-data">
 
-                                <div class="container forspace">
+                                <div class="forspace">
                                     <div class="row">
                                         <div class="col">
                                             <div style="text-align : end">
-                                                de <input style="background-color : whitesmoke" type="text">
+                                                De <select name="" id="">
+                                                    <option value="Choose_Depart">Chosir le pays et ville</option>
+                                                </select>
+                                                <div style="text-align : center">
+                                                    Depart le :
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div style="text-align : start">
-                                                vers <input style="background-color : whitesmoke" type="text">
+                                                Vers <select name="" id="">
+                                                    <option value="Choose_Depart">Chosir le pays et ville</option>
+                                                </select>
+                                                <div>
+                                                    Arrive le :
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="row">
-                                        <div class="col">
-                                            <div style="text-align : center">
-                                                Depart le :
-                                            </div>
-                                        </div>
-
-                                        <div class="col">
-                                            <div style="text-align : center">
-                                                Arrive le :
-                                            </div>
-                                        </div>
-                                    </div>
+                        
 
                                     <!--<div style="display: flex">
                                         <div>depart le :</div>
